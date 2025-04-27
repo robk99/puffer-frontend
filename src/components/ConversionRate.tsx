@@ -13,6 +13,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import 'chartjs-adapter-date-fns';
+import { AppConfig } from '../config/app.config';
 
 // Register Chart.js components
 ChartJS.register(
@@ -51,7 +52,7 @@ const ConversionRate: React.FC = () => {
       setError(null);
       try {
         const response = await axios.get<ApiResponse>(
-          `http://localhost:3009/api/conversion-rate?period=${period}`
+          `${AppConfig.BACKEND_API_BASE_URL}/conversion-rate?period=${period}`
         );
         if (response.data.success) {
           setData(response.data.data);

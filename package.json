@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "env-cmd --silent -f .env react-scripts start",
-    "dev": "env-cmd --silent -f dev.env react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -25,10 +24,7 @@
     "axios": "^1.9.0",
     "chart.js": "^4.4.9",
     "chartjs-adapter-date-fns": "^3.0.0",
-    "cross-env": "^7.0.3",
     "date-fns": "^4.1.0",
-    "dotenv": "^16.5.0",
-    "env-cmd": "^10.1.0",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-chartjs-2": "^5.3.0",
