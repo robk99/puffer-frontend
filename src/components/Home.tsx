@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// FAQ data - similar to Puffer.fi
 const faqData = [
   {
     question: "What is Puffer?",

@@ -1,0 +1,61 @@
+.appHeader {
+    --app-header-bg: rgb(0 0 0 / 12%);
+    --bg: #ffffff;
+    --app-header-height: 80px;
+
+    align-items: center;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    background-color: var(--app-header-bg);
+    color: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: var(--app-header-height);
+}
+
+.navContainer {
+    z-index: 30;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.innerNavContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    flex: 1;
+    margin-left: 2.5rem;
+}
+
+.navButton {
+    transition: 0.2s;
+    position: relative;
+    white-space: nowrap;
+    outline: none;
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+}
+
+.navButton:hover {
+    --text: #000000;
+    --alpha: 5%;
+
+    background: color-mix(in srgb, var(--text) var(--alpha), transparent);
+}
+
+.navButtonActive {
+    --text: #000000;
+    --alpha: 20%;
+
+    background: color-mix(in srgb, var(--text) var(--alpha), transparent);
+}

@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Home from './components/Home';
 import ConversionRate from './components/ConversionRate';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-background text-white">
+      <div className="min-h-screen text-white">
         <Header />
         <main>
           <Routes>

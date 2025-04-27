@@ -2,18 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #0F172A;
-  color: #fff;
+    margin: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+        'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    max-width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+
+    --one: rgb(255 255 255 / 0%);
+    --two: rgb(255 255 255 / 8%);
+    --three: rgb(255 255 255 / 14%);
+    --four: rgb(0 0 0 / 8%);
+
+    background:
+        linear-gradient(0deg, #5653eb 40%, #5653eb80),
+        linear-gradient(
+            45deg,
+            var(--one) 0%,
+            var(--one) 45%,
+            var(--two) 45%,
+            var(--two) 55%,
+            var(--one) 55%,
+            var(--one) 61%,
+            var(--three) 61%,
+            var(--three) 63%,
+            var(--two) 63%,
+            var(--two) 65%,
+            var(--three) 65%,
+            var(--three) 63.5%,
+            var(--two) 63.5%,
+            var(--two) 68%,
+            var(--four) 68%,
+            var(--four) 69%,
+            var(--one) 69%,
+            var(--one) 100%
+        );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
