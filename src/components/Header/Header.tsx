@@ -20,7 +20,7 @@ const Header = () => {
             >
                 <Link className="" to="/">
                     <img
-                        src="./puffer-logo-white.svg"
+                        src="/puffer-logo-white.svg"
                         alt="Puffer Finance"
                         width="132"
                         height="40"
