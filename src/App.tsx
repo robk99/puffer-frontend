@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import ConversionRate from './components/ConversionRate';
-import NotFound from './components/NotFound';
+import ConversionRate from './components/ConversionRate/ConversionRate';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
     return (

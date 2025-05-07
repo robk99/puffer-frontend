@@ -7,17 +7,7 @@ const Header = () => {
 
     return (
         <header className={styles.appHeader}>
-            <div
-                className={`${styles.navContainer}`}
-                style={{
-                    alignItems: 'center',
-                    display: 'flex',
-                    flex: '1 1 0%',
-                    flexDirection: 'row',
-                    gap: '0px',
-                    justifyContent: 'space-between',
-                }}
-            >
+            <div className={`${styles.navContainer}`}>
                 <Link className="" to="/">
                     <img
                         src="/puffer-logo-white.svg"
